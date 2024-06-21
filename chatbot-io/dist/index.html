@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot IO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+<script defer src="bundle.js"></script></head>
+<body>
+  <div class="container-fluid vh-100 d-flex flex-column">
+    <div class="row flex-grow-1">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-sm-4 sidebar">
+        <h3>Bots</h3>
+        <ul id="bot-list" class="list-group">
+          <!-- Bots will be listed here -->
+        </ul>
+      </div>
+      <!-- Chat window -->
+      <div class="col-md-9 col-sm-8 d-flex flex-column">
+        <div id="chat-window" class="chat-window flex-grow-1 overflow-auto">
+          <!-- Messages will be displayed here -->
+        </div>
+        <div class="input-group mb-3">
+          <input id="message-input" type="text" class="form-control" placeholder="Type your message...">
+          <div class="input-group-append">
+            <button id="send-button" class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>

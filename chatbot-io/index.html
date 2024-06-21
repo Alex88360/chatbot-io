@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application</title>
+  <link href="css/styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="sidebar">
+      <div class="bot-list">
+        <div class="bot-item active" data-bot="weather">WeatherBot</div>
+        <div class="bot-item" data-bot="news">NewsBot</div>
+        <div class="bot-item" data-bot="translation">TranslationBot</div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="messages-container">
+      </div>
+      <div class="input-container">
+        <select id="select-actions"></select>
+        <input type="text" placeholder="Type your message..." id="message-input">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
